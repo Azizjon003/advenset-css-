@@ -1,0 +1,97 @@
+.div {
+  position: relative;
+  width: 25rem;
+  height: 25rem;
+  margin: 10rem auto;
+}
+div {
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  position: absolute;
+  display: inline-block;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+.greenn {
+  background-color: #19a68c;
+  animation-name: jafar;
+  top: 0;
+  left: 0;
+}
+.yelloww {
+  background-color: #fda543;
+  animation-name: jafar1;
+  top: 0;
+  right: 0;
+}
+.bluee {
+  background-color: #193b48;
+  animation-name: jafar4;
+  bottom: 0;
+  right: 0;
+}
+.redd {
+  background-color: #f63d3a;
+  animation-name: jafar3;
+  bottom: 0;
+  left: 0;
+}
+@keyframes jafar {
+  100% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(150%);
+  }
+  50% {
+    transform: translate(150%, 150%);
+  }
+  75% {
+    transform: translate(0, 150%);
+  }
+}
+@keyframes jafar1 {
+  25% {
+    transform: translate(0, 150%);
+  }
+  50% {
+    transform: translate(-150%, 150%);
+  }
+  75% {
+    transform: translate(-150%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes jafar4 {
+  25% {
+    transform: translate(-150%, 0);
+  }
+  50% {
+    transform: translate(-150%, -150%);
+  }
+  75% {
+    transform: translate(0, -150%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes jafar3 {
+  25% {
+    transform: translate(0, -150%);
+  }
+  50% {
+    transform: translate(150%, -150%);
+  }
+  75% {
+    transform: translate(150%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
